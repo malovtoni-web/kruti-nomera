@@ -1,7 +1,17 @@
 {
   "name": "holy-snowflake-bcf4",
+  "main": "src/index.js",
   "compatibility_date": "2026-11-24",
   "assets": {
-    "directory": "./"
-  }
+    "directory": "./",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "kruti-nomera-db",
+      "database_id": "c379770c-6718-49c5-af29-2cb767718462"
+    }
+  ]
 }
