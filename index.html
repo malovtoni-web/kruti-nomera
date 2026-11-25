@@ -150,6 +150,7 @@ function spin(type){
   sync();
   isSpinning=false;
   spinButtons.forEach(b=>b.disabled=false);
+  document.getElementById('quickspin').disabled=state.energy<1;
  }
  setTimeout(roll,80);
 }
